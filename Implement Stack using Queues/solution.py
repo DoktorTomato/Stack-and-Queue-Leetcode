@@ -38,15 +38,6 @@ class Queue:
             self.head = Node()
         return pop_data
 
-    def __repr__(self) -> str:
-        res = "Queue("
-        cur = self.head
-        while cur:
-            res += repr(cur)
-            cur = cur.next
-        res += ')'
-        return res
-
 class MyStack:
     '''
     This is the stack implemented using a queue
